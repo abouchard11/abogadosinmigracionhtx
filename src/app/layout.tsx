@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PostHogProvider } from "@/components/PostHogProvider";
+import { PostHogPageView } from "@/components/PostHogPageView";
 import "./globals.css";
 
 const inter = Inter({
@@ -88,9 +90,12 @@ export default function RootLayout({
         <meta name="ICBM" content="29.7604, -95.3698" />
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <PostHogProvider>
+          <PostHogPageView />
+          <Header />
+          {children}
+          <Footer />
+        </PostHogProvider>
       </body>
     </html>
   );
