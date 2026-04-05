@@ -13,8 +13,7 @@ const practiceAreas = [
 const resources = [
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "vs. Foster Global", href: "/vs/foster-global" },
-  { label: "Free Consultation", href: "/contact" },
+{ label: "Free Consultation", href: "/contact" },
 ];
 
 const cities = [
