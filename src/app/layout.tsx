@@ -19,16 +19,16 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HTX Immigration Law | Houston Immigration Defense Attorneys",
+  title: "Abogados de Inmigración Houston TX | Defensa contra Deportación 24/7",
   description:
-    "Houston's trusted immigration law firm. Deportation defense, family visas, asylum, work visas & citizenship. Bilingual attorneys available 24/7. Free consultation.",
+    "Abogados de inmigración en Houston, TX. Defensa contra deportación, visas familiares, asilo, visas de trabajo y ciudadanía. Abogados bilingües disponibles 24/7. Consulta gratis.",
   openGraph: {
-    title: "HTX Immigration Law | Houston Immigration Defense Attorneys",
+    title: "Abogados de Inmigración Houston TX | Defensa contra Deportación 24/7",
     description:
-      "Trusted Houston immigration attorneys. Deportation defense, family visas & citizenship. Bilingual, 24/7 available. Free consultation.",
-    url: "https://htximmigrationlaw.com",
-    siteName: "HTX Immigration Law",
-    locale: "en_US",
+      "Abogados de inmigración en Houston. Defensa contra deportación, visas familiares y ciudadanía. Bilingüe, disponible 24/7. Consulta gratis.",
+    url: "https://abogadosinmigracionhtx.com",
+    siteName: "Abogados de Inmigración HTX",
+    locale: "es_US",
     type: "website",
   },
   robots: {
@@ -43,7 +43,11 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://htximmigrationlaw.com",
+    canonical: "https://abogadosinmigracionhtx.com",
+    languages: {
+      "en": "https://htximmigrationlaw.com",
+      "es": "https://abogadosinmigracionhtx.com",
+    },
   },
 };
 
@@ -66,20 +70,22 @@ export default function RootLayout({
             "@graph": [
               {
                 "@type": "LegalService",
-                "@id": "https://htximmigrationlaw.com/#organization",
-                "name": "HTX Immigration Law",
-                "url": "https://htximmigrationlaw.com",
+                "@id": "https://abogadosinmigracionhtx.com/#organization",
+                "name": "Abogados de Inmigración HTX",
+                "url": "https://abogadosinmigracionhtx.com",
                 "telephone": "+18329778173",
-                "description": "Houston immigration attorneys specializing in deportation defense, family visas, asylum, and citizenship.",
+                "description": "Abogados de inmigración en Houston especializados en defensa contra deportación, visas familiares, asilo y ciudadanía.",
                 "areaServed": { "@type": "City", "name": "Houston", "addressRegion": "TX", "addressCountry": "US" },
-                "address": { "@type": "PostalAddress", "addressLocality": "Houston", "addressRegion": "TX", "addressCountry": "US" }
+                "address": { "@type": "PostalAddress", "addressLocality": "Houston", "addressRegion": "TX", "addressCountry": "US" },
+                "availableLanguage": ["Spanish", "English"]
               },
               {
                 "@type": "WebSite",
-                "@id": "https://htximmigrationlaw.com/#website",
-                "name": "HTX Immigration Law",
-                "url": "https://htximmigrationlaw.com",
-                "publisher": { "@id": "https://htximmigrationlaw.com/#organization" }
+                "@id": "https://abogadosinmigracionhtx.com/#website",
+                "name": "Abogados de Inmigración HTX",
+                "url": "https://abogadosinmigracionhtx.com",
+                "inLanguage": "es",
+                "publisher": { "@id": "https://abogadosinmigracionhtx.com/#organization" }
               }
             ]
           }`}

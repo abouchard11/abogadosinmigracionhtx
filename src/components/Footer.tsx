@@ -107,6 +107,27 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            <h3 className="text-[11px] font-bold uppercase tracking-widest mt-8 mb-4" style={{ color: "var(--gold-500)" }}>
+              Houston Legal Network
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://htximmigrationlaw.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  HTX Immigration Law
+                </a>
+              </li>
+              <li>
+                <a href="https://htxmaritimelaw.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  HTX Maritime Law
+                </a>
+              </li>
+              <li>
+                <a href="https://houstonlawyerlist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 hover:text-white transition-colors">
+                  Houston Lawyer List
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
