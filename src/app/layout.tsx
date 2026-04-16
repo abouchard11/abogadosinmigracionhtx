@@ -47,6 +47,7 @@ export const metadata: Metadata = {
     languages: {
       "en": "https://htximmigrationlaw.com",
       "es": "https://abogadosinmigracionhtx.com",
+      "x-default": "https://htximmigrationlaw.com",
     },
   },
 };
